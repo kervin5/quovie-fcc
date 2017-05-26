@@ -12,6 +12,40 @@
   animation: 3s loading infinite;
 }
 
+nav {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+
+  div {
+    display: inline-block;
+  }
+
+  .logo{
+   position: absolute;
+    left: 20px;
+    h3 {
+      font-family: 'Dosis', sans-serif;
+      display: inline-block;
+      font-size: 2em;
+    }
+
+    i {
+      color: #26baff;
+    }
+  }
+
+  .links {
+    position: absolute;
+    right: 30px;
+    top: 35px;
+  }
+
+  .fa {
+    font-size: 2em;
+  }
+}
+
 body {
   background-size: cover;
   background-position: center center;
@@ -35,15 +69,15 @@ body {
     z-index: 2;
 
 
-    .content {
-      //animation: show-content 2s;
-     // visibility: hidden;
-    }
-
-
     p {
       font-family: 'Open Sans', sans-serif;
       font-size: 2em;
+    }
+
+    .content {
+      .movie1 {
+        color: #26baff;
+      }
     }
 
     .btn {

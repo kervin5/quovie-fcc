@@ -10,6 +10,35 @@
   animation: 3s loading infinite;
 }
 
+nav {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+nav div {
+  display: inline-block;
+}
+nav .logo {
+  position: absolute;
+  left: 20px;
+}
+nav .logo h3 {
+  font-family: 'Dosis', sans-serif;
+  display: inline-block;
+  font-size: 2em;
+}
+nav .logo i {
+  color: #26baff;
+}
+nav .links {
+  position: absolute;
+  right: 30px;
+  top: 35px;
+}
+nav .fa {
+  font-size: 2em;
+}
+
 body {
   background-size: cover;
   background-position: center center;
@@ -34,6 +63,9 @@ body .quote-container {
 body .quote-container p {
   font-family: 'Open Sans', sans-serif;
   font-size: 2em;
+}
+body .quote-container .content .movie1 {
+  color: #26baff;
 }
 body .quote-container .btn {
   text-decoration: none;
