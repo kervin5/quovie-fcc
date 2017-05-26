@@ -6,6 +6,15 @@
 function setQuote(data, quoteContainer, authorContainer) {
     quoteContainer = (typeof quoteContainer !== 'undefined') ?  quoteContainer : ".quote1"; // default quote
     authorContainer = (typeof authorContainer !== 'undefined') ?  authorContainer : ".movie1"; // default number of quotes
+
+    if(data.quote.length > 80) {
+        $(quoteContainer).css("font-size", "1.5em" );
+        console.log("yes");
+    }else {
+        $(quoteContainer).css("font-size", "2em" );
+    }
+
+
     $(quoteContainer).html('"'+ data.quote + '"');
     $(authorContainer).html('~ '+ data.author);
 
