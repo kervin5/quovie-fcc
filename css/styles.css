@@ -1,0 +1,114 @@
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading {
+  animation: 3s loading infinite;
+}
+
+body {
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  margin: 0;
+}
+body h2 {
+  font-family: 'Dosis', sans-serif;
+  font-size: 3em;
+}
+body .quote-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  z-index: 2;
+}
+body .quote-container p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+}
+body .quote-container .btn {
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.7s;
+  margin: 10px;
+}
+body .quote-container .btn p {
+  margin: 10px;
+  font-size: 1.2em;
+}
+body .quote-container .btn p .fa {
+  margin-right: 10px;
+}
+body .quote-container .solid-btn {
+  background-color: #26baff;
+  border: none;
+  color: black;
+}
+body .quote-container .solid-btn:hover {
+  background-color: black;
+  -webkit-box-shadow: -1px 0px 71px 0px #26baff;
+  -moz-box-shadow: -1px 0px 71px 0px #26baff;
+  box-shadow: -1px 0px 71px 0px #26baff;
+  color: #26baff;
+}
+body .quote-container .solid-btn:active {
+  background-color: #ff7526;
+  color: black;
+  -webkit-box-shadow: -1px 0px 71px 0px black;
+  -moz-box-shadow: -1px 0px 71px 0px black;
+  box-shadow: -1px 0px 71px 0px black;
+}
+body .quote-container .transparent-btn {
+  border: 1px solid #26baff;
+  color: #26baff;
+}
+body .quote-container .transparent-btn:hover {
+  background-color: white;
+  color: black;
+  border-color: white;
+  -webkit-box-shadow: -1px 0px 71px 0px black;
+  -moz-box-shadow: -1px 0px 71px 0px black;
+  box-shadow: -1px 0px 71px 0px black;
+}
+body .quote-container .transparent-btn:active {
+  background-color: #ff7526;
+  border-color: #ff7526;
+  color: black;
+  -webkit-box-shadow: -1px 0px 71px 0px black;
+  -moz-box-shadow: -1px 0px 71px 0px black;
+  box-shadow: -1px 0px 71px 0px black;
+}
+
+.overlay-bg {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  background: -moz-linear-gradient(top, rgba(10, 30, 51, 0.48) 0%, rgba(7, 0, 0, 0.9) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(10, 30, 51, 0.48) 0%, rgba(7, 0, 0, 0.9) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(10, 30, 51, 0.48) 0%, rgba(7, 0, 0, 0.9) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7a0a1e33', endColorstr='#e6070000',GradientType=0 );
+  /* IE6-9 */
+}
+
+.actions {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  z-index: 2;
+}
+.actions a {
+  display: inline-block;
+}
