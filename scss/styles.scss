@@ -59,8 +59,6 @@ body {
     font-family: 'Dosis', sans-serif;
     font-size: 3em;
   }
-
-
 }
 
 .quote-container {
@@ -151,6 +149,12 @@ body {
       -moz-box-shadow: -1px 0px 71px 0px black;
       box-shadow: -1px 0px 71px 0px black;
     }
+  }
+}
+
+@media (max-width: 700px) {
+  .quote1 {
+    font-size: 2em;
   }
 }
 

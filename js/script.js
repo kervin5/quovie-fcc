@@ -12,6 +12,21 @@ function setQuote(data, quoteContainer, authorContainer) {
 }
 
 function setBackground(url){
+    var windowsWidth = $(window).width();
+    var imageSize = "";
+
+    if (windowsWidth > 1400) {
+        imageSize = "original";
+    } else if (windowsWidth > 900) {
+        imageSize = "w1280";
+    } else if (windowsWidth > 600) {
+        imageSize = "w780";
+    } else {
+        imageSize = "w300";
+    }
+
+    url = url.replace("%size%", imageSize);
+
     console.log(url);
     $("body").css("background-image","url("+url+")");
 }
@@ -31,7 +46,7 @@ function removeLoading(){
 
 
 function getBackdrop(name) {
-    var baseImageUrl = "https://image.tmdb.org/t/p/original//";
+    var baseImageUrl = "https://image.tmdb.org/t/p/%size%//";
     $.ajax({
         url: 'https://api.themoviedb.org/3/search/movie', // The URL to the API. You can get this in the API page of the API you intend to consume
         type: 'GET', // The HTTP Method, can be GET POST PUT DELETE etc
